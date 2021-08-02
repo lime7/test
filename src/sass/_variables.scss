@@ -1,0 +1,91 @@
+// Variables
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+$font-family-sans-serif: 'Poppins', sans-serif !default;
+
+$enable-rfs: false;
+$enable-negative-margins: true;
+$enable-shadows: true;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * 0.625,
+  14: $spacer * 0.875,
+) !default;
+
+$gray-100:                   #ebf1fa !default;
+$gray-200:                   #b6c3d3 !default;
+$gray-300:                   #bac8db !default;
+$gray-400:                   #213a5c !default;
+$gray-500:                   #93a6bf !default;
+$gray-600:                   #e7edf5 !default;
+$gray-700:                   #565f6a !default;
+$gray-800:                   #364a58 !default;
+$blue:                       #1479ff !default;
+$red:                        #ff4545 !default;
+
+$box-shadow:                 0 5px 1.875rem rgba(182, 195, 211, 0.6) !default;
+$box-shadow-lg:              0 1.25rem 60px rgba(182, 195, 211, 0.5) !default;
+
+$border-radius-sm:           0.5rem !default;
+$border-radius-lg:           0.75rem !default;
+
+$h1-font-size:               1.875rem !default;
+$h2-font-size:               1.73rem !default;
+$h5-font-size:               1.125rem !default;
+
+$font-weight-bolder:         800 !default;
+
+$body-color:                 #274772 !default;
+$body-bg:                    #f8fbff !default;
+
+$input-font-size:            0.9375rem !default;
+$input-line-height:          1.375 !default;
+$input-padding-x:            1.1875rem !default;
+$input-padding-y:            0.84375rem !default;
+$input-bg:                   transparent !default;
+$input-border-color:         $gray-300 !default;
+$input-placeholder-color:    $gray-300 !default;
+$input-focus-box-shadow:     none !default;
+$input-focus-border-color:   $gray-300 !default;
+$form-label-font-weight:     600 !default;
+
+$btn-font-size:              1rem !default;
+$btn-line-height:            1.5rem !default;
+$btn-font-weight:            700 !default;
+$btn-border-radius:          $spacer/2 !default;
+$btn-padding-y:              0.875rem !default;
+$btn-padding-x:              0.9375rem !default;
+$btn-link-color:             $body-color !default;
+$btn-focus-box-shadow:       none !default;
+$btn-active-box-shadow:      none !default;
+$btn-box-shadow:             none !default;
+$input-btn-focus-box-shadow: none !default;
+
+$pagination-color:                  $gray-500 !default;
+$pagination-bg:                     transparent !default;
+$pagination-padding-x:              0.125rem !default;
+$pagination-padding-y:              0 !default;
+$pagination-border-color:           $gray-600 !default;
+$pagination-border-radius:          0.25rem !default;
+$pagination-font-size:              0.875rem !default;
+$pagination-line-height:            1.25rem !default;
+$pagination-size:                   2rem !default;
+$pagination-font-weight:            600 !default;
+$pagination-icon-size:              0.75rem !default;
+$pagination-disabled-color:         #fff !default;
+$pagination-disabled-bg:            $gray-500 !default;
+$pagination-disabled-border-color:  $gray-500 !default;
+$pagination-hover-color:            $gray-800 !default;
+$pagination-hover-bg:               #fff !default;
+$pagination-hover-border-color:     $gray-400 !default;
+$pagination-active-color:           $gray-800 !default;
+$pagination-active-bg:              #fff !default;
+$pagination-active-border-color:    $gray-800 !default;

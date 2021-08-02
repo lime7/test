@@ -1,0 +1,73 @@
+// Base
+.icon {
+  display: inline-block;
+  width: $font-size-base;
+  height: $font-size-base;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+a[href*="mailto:"],
+a[href*="tel:"] {
+  white-space: nowrap;
+}
+
+html {
+  font-size: 16px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  letter-spacing: 0.02em;
+  box-shadow: none !important;
+
+  &-primary {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+    }
+  }
+
+  &-light {
+    color: $gray-700;
+  }
+
+  &-link {
+    padding: 0;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-size: $input-font-size;
+    border: none;
+  }
+}
+
+.page-item + .page-item {
+  margin-left: 0.5rem;
+}
+
+.page-link {
+  font-size: $pagination-font-size;
+  line-height: calc(#{$pagination-size} - 2px);
+  font-weight: $pagination-font-weight;
+  width: $pagination-size;
+  height: $pagination-size;
+  text-align: center;
+  border-radius: $pagination-border-radius;
+
+  .icon {
+    width: $pagination-icon-size;
+    height: $pagination-icon-size;
+  }
+}
