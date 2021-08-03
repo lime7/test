@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === 'development') {
   require('./registration-complete.html')
   require('./create-account.html')
   require('./profile.html')
-  require('./tenders.html')
+  require('./bids.html')
 }
 
 console.log('%c%s', 'color: orangered;', 'S>>>> index.js')

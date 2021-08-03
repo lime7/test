@@ -156,10 +156,10 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Tenders',
+      title: 'Bids',
       // favicon: paths.static + '/favicon.ico',
-      filename: 'tenders.html',
-      template: paths.src + '/tenders.html', // template file
+      filename: 'bids.html',
+      template: paths.src + '/bids.html', // template file
       minify: false
       // hash: true,
       // inject: false

@@ -20,6 +20,16 @@ body {
   overflow: hidden;
 }
 
+.lg > .row {
+  min-height: inherit;
+}
+
+@media (max-width: 1199.98px) {
+  .lg {
+    min-height: inherit;
+  }
+}
+
 .md {
   max-width: 980px;
   width: 100%;
@@ -69,6 +79,9 @@ body {
   border-color: #213a5c;
   background-size: 0.5625rem;
   border-radius: 50%;
+}
+
+.form-check.radio .form-check-input:checked[type=radio] {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'><circle cx='4.5' cy='4.5' r='4.5' fill='#1479ff'/></svg>");
 }
 
@@ -80,6 +93,7 @@ body {
 
 .form-check.radio {
   padding-left: 1.3125rem;
+  margin-bottom: 0;
 }
 
 .btn-group-vertical {
@@ -188,6 +202,14 @@ body {
 
 .btn-group-vertical ul li + li {
   margin-top: 0.625rem;
+}
+
+@media (max-width: 1199.98px) {
+  .btn-group-vertical .btn,
+  .btn-group .btn {
+    padding-left: 1rem;
+    padding-right: 0.75rem;
+  }
 }
 
 .file .form-label {
@@ -326,5 +348,57 @@ body {
   .col .form-control:disabled,
   .col .form-control[readonly] {
     padding-left: 0;
+  }
+}
+
+.table-responsive {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  width: calc(100% + 2.5rem);
+}
+
+.table-responsive th:first-child,
+.table-responsive td:first-child {
+  padding-left: 1.25rem;
+}
+
+.table-responsive th:last-child,
+.table-responsive td:last-child {
+  padding-right: 1.25rem;
+}
+
+.table-responsive::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.table-responsive::-webkit-scrollbar:vertical {
+  width: 0.5rem;
+}
+
+.table-responsive::-webkit-scrollbar:horizontal {
+  height: 0.5rem;
+}
+
+.table-responsive::-webkit-scrollbar-thumb { /* stylelint-disable-line no-descending-specificity */
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #274772;
+}
+
+@media (max-width: 991.98px) {
+  .table-responsive {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    width: calc(100% + 1rem);
+  }
+
+  .table-responsive th:first-child,
+  .table-responsive td:first-child {
+    padding-left: 0.5rem;
+  }
+
+  .table-responsive th:last-child,
+  .table-responsive td:last-child {
+    padding-right: 0.5rem;
   }
 }
