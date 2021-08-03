@@ -110,6 +110,20 @@ html {
   box-shadow: none;
 }
 
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: transparent;
+  border-color: transparent;
+  padding-left: 0.75rem;
+  font-weight: 500;
+}
+
+textarea.form-control:disabled,
+textarea.form-control[readonly] {
+  resize: none;
+  height: 8rem !important;
+}
+
 .is-valid .form-control,
 .form-control.is-valid,
 .is-invalid .form-control,
@@ -147,4 +161,9 @@ html {
 
 .is-invalid::after {
   background-image: $form-feedback-icon-invalid;
+}
+
+.btn-group-vertical > .btn,
+.btn-group > .btn {
+  flex: inherit;
 }
