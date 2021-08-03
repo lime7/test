@@ -432,3 +432,18 @@ body {
   font-size: .875rem;
   line-height: 1.5rem;
 }
+
+.calendar .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar .btn .icon {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.icon-delete {
+  opacity: .8;
+}

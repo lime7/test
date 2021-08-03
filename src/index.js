@@ -15,6 +15,10 @@ if (process.env.NODE_ENV === 'development') {
   require('./bids.html')
   require('./bids-submit.html')
   require('./bids-view.html')
+  require('./search-tenders.html')
+  require('./inbox-messages.html')
+  require('./notifications.html')
+  require('./notifications-settings.html')
 }
 
 console.log('%c%s', 'color: orangered;', 'S>>>> index.js')

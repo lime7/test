@@ -255,6 +255,46 @@ module.exports = {
       // inject: false
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Search for Tenders',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'search-tenders.html',
+      template: paths.src + '/search-tenders.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Inbox messages',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'inbox-messages.html',
+      template: paths.src + '/inbox-messages.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Notifications',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'notifications.html',
+      template: paths.src + '/notifications.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Notifications Select',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'notifications-settings.html',
+      template: paths.src + '/notifications-settings.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
     new StylelintPlugin({
       files: '**/*.s?(a|c)ss'
     })
