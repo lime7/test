@@ -78,6 +78,18 @@ body {
 .file .form-label {
   font-weight: 500;
   margin-left: 1.375rem;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .file {
+    text-align: left;
+  }
+
+  .file .form-label {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
 }
 
 .file .btn {
@@ -94,4 +106,36 @@ body {
   height: 2.375rem;
   width: 2.375rem;
   text-align: center;
+}
+
+.step {
+  letter-spacing: 0.02em;
+}
+
+.step strong {
+  width: 3.1875rem;
+  height: 3.1875rem;
+  line-height: 3.1875rem;
+  text-align: center;
+  display: block;
+  font-size: 1.125rem;
+}
+
+.step li + li {
+  margin-top: 1.75rem;
+}
+
+.step li + li::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: #bac8db;
+  height: 1.75rem;
+  left: 1.59375rem;
+  bottom: 100%;
+}
+
+.fsz-18 {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }

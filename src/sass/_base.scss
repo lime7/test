@@ -118,6 +118,10 @@ html {
 .was-validated .form-control:invalid {
   background-image: none;
   padding-right: $input-padding-x;
+
+  @include media-breakpoint-down(lg) {
+    padding-right: $input-padding-x * 2;
+  }
 }
 
 .is-valid::after,
@@ -131,6 +135,10 @@ html {
   top: 50%;
   transform: translateY(-50%);
   right: -2rem;
+
+  @include media-breakpoint-down(lg) {
+    right: $input-padding-x / 3;
+  }
 }
 
 .is-valid::after {
