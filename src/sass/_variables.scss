@@ -16,58 +16,103 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 3.75,
   10: $spacer * 0.625,
   14: $spacer * 0.875,
+  20: $spacer * 1.25,
+  30: $spacer * 1.875,
 ) !default;
 
-$gray-100:                   #ebf1fa !default;
-$gray-200:                   #b6c3d3 !default;
-$gray-300:                   #bac8db !default;
-$gray-400:                   #213a5c !default;
-$gray-500:                   #93a6bf !default;
-$gray-600:                   #e7edf5 !default;
-$gray-700:                   #565f6a !default;
-$gray-800:                   #364a58 !default;
-$blue:                       #1479ff !default;
-$red:                        #ff4545 !default;
+$gray-10:                           #f8fbff !default;
+$gray-100:                          #ebf1fa !default;
+$gray-200:                          #b6c3d3 !default;
+$gray-300:                          #bac8db !default;
+$gray-400:                          #213a5c !default;
+$gray-500:                          #93a6bf !default;
+$gray-600:                          #e7edf5 !default;
+$gray-700:                          #565f6a !default;
+$gray-800:                          #364a58 !default;
+$blue:                              #1479ff !default;
+$red:                               #ff4545 !default;
+$red-dark:                          #dc0000 !default;
+$green:                             #27ae60 !default;
+$orange:                            #f6ab60 !default;
 
-$box-shadow:                 0 5px 1.875rem rgba(182, 195, 211, 0.6) !default;
-$box-shadow-lg:              0 1.25rem 60px rgba(182, 195, 211, 0.5) !default;
+$primary:                           $blue !default;
+$success:                           $green !default;
+$warning:                           $orange !default;
+$danger:                            $red !default;
+$danger-dark:                       $red-dark !default;
+$light:                             $gray-100 !default;
 
-$border-radius-sm:           0.5rem !default;
-$border-radius-lg:           0.75rem !default;
+$theme-colors: (
+  "primary":    $primary,
+  "success":    $success,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "danger-dark":       $danger-dark
+) !default;
 
-$h1-font-size:               1.875rem !default;
-$h2-font-size:               1.73rem !default;
-$h5-font-size:               1.125rem !default;
+$box-shadow:                        0 5px 1.875rem rgba(182, 195, 211, 0.6) !default;
+$box-shadow-lg:                     0 1.25rem 3.75rem rgba(182, 195, 211, 0.5) !default;
 
-$font-weight-bolder:         800 !default;
+$border-radius-sm:                  0.5rem !default;
+$border-radius-lg:                  0.75rem !default;
 
-$body-color:                 #274772 !default;
-$body-bg:                    #f8fbff !default;
+$h1-font-size:                      1.875rem !default;
+$h2-font-size:                      1.73rem !default;
+$h5-font-size:                      1.125rem !default;
 
-$input-font-size:            0.9375rem !default;
-$input-line-height:          1.375 !default;
-$input-padding-x:            1.1875rem !default;
-$input-padding-y:            0.84375rem !default;
-$input-bg:                   transparent !default;
-$input-border-color:         $gray-300 !default;
-$input-placeholder-color:    $gray-300 !default;
-$input-focus-box-shadow:     none !default;
-$input-focus-border-color:   $gray-300 !default;
-$form-label-font-weight:     600 !default;
+$font-weight-bolder:                800 !default;
 
-$btn-font-size:              1rem !default;
-$btn-line-height:            1.5rem !default;
-$btn-font-weight:            700 !default;
-$btn-border-radius:          $spacer/2 !default;
-$btn-padding-y:              0.875rem !default;
-$btn-padding-x:              0.9375rem !default;
-$btn-link-color:             $body-color !default;
-$btn-focus-box-shadow:       none !default;
-$btn-active-box-shadow:      none !default;
-$btn-box-shadow:             none !default;
-$input-btn-focus-box-shadow: none !default;
+$body-color:                        #274772 !default;
+$body-bg:                           #f3f8ff !default;
+
+$input-font-size:                   0.9375rem !default;
+$input-line-height:                 1.375 !default;
+$form-label-font-size:              0.9375rem !default;
+$form-label-line-height:            1.375 !default;
+$input-padding-x:                   1.1875rem !default;
+$input-padding-y:                   0.84375rem !default;
+$input-bg:                          transparent !default;
+$input-border-color:                $gray-300 !default;
+$input-placeholder-color:           $gray-300 !default;
+$input-focus-box-shadow:            none !default;
+$input-focus-border-color:          $gray-300 !default;
+$form-label-font-weight:            600 !default;
+$input-box-shadow:                  none !default;
+$form-label-margin-bottom:          0 !default;
+
+$form-feedback-icon-valid-color:    $gray-300 !default;
+$form-feedback-icon-valid:          url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99998 0C4.47715 0 0 4.47715 0 9.99998C0 15.5228 4.47715 20 9.99998 20C15.5228 20 20 15.5228 20 9.99998C19.9941 4.47961 15.5204 0.00590122 9.99998 0ZM9.99998 18.5714C5.26611 18.5714 1.42856 14.7338 1.42856 9.99998C1.42856 5.26611 5.26611 1.42856 9.99998 1.42856C14.7338 1.42856 18.5714 5.26611 18.5714 9.99998C18.5663 14.7318 14.7318 18.5663 9.99998 18.5714Z' fill='%2327AE60'/%3E%3Cpath d='M15.4873 5.92366C15.2105 5.65631 14.7717 5.65631 14.4949 5.92366L7.85706 12.5615L5.5049 10.2093C5.23085 9.92557 4.77863 9.91775 4.49491 10.1918C4.21115 10.4659 4.20332 10.9181 4.47738 11.2018C4.48311 11.2077 4.48897 11.2136 4.49491 11.2193L7.35207 14.0765C7.63097 14.3553 8.08315 14.3553 8.36205 14.0765L15.5049 6.93361C15.779 6.64989 15.7711 6.19771 15.4873 5.92366Z' fill='%2327AE60'/%3E%3C/svg%3E%0A") !default;
+$form-feedback-icon-invalid-color:  $gray-300 !default;
+$form-feedback-icon-invalid:        url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z' stroke='%23FF4545' stroke-width='1.66667'/%3E%3Cpath d='M10.6667 7H11.3333L11 11.8333L10.6667 7Z' stroke='%23FF4545' stroke-width='1.66667' stroke-linejoin='round'/%3E%3Cpath d='M11 15.6667C11.5523 15.6667 12 15.2189 12 14.6667C12 14.1144 11.5523 13.6667 11 13.6667C10.4477 13.6667 10 14.1144 10 14.6667C10 15.2189 10.4477 15.6667 11 15.6667Z' fill='%23FF4545'/%3E%3C/svg%3E%0A") !default;
+
+$form-check-input-width:            1.3125em !default;
+$form-check-min-height:             1.3125em !default;
+$form-check-input-border-radius:    0.5rem !default;
+$form-check-padding-start:          $form-check-input-width + 0.6875em !default;
+$form-check-input-border:           1px solid $gray-300 !default;
+$form-check-input-checked-border-color: $gray-300 !default;
+$form-check-input-checked-color:    #fff !default;
+$form-check-input-checked-bg-color: #fff !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13'><rect width='13' height='13' rx='4' fill='#{$blue}'/></svg>") !default;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'><circle cx='4.5' cy='4.5' r='4.5' fill='#{$blue}'/></svg>") !default;
+$form-select-focus-box-shadow:      none !default;
+$form-select-box-shadow:            none !default;
+
+$btn-font-size:                     1rem !default;
+$btn-line-height:                   1.5rem !default;
+$btn-font-weight:                   700 !default;
+$btn-border-radius:                 $spacer/2 !default;
+$btn-padding-y:                     0.875rem !default;
+$btn-padding-x:                     0.9375rem !default;
+$btn-link-color:                    $body-color !default;
+$btn-focus-box-shadow:              none !default;
+$btn-active-box-shadow:             none !default;
+$btn-box-shadow:                    none !default;
+$input-btn-focus-box-shadow:        none !default;
 
 $pagination-color:                  $gray-500 !default;
 $pagination-bg:                     transparent !default;

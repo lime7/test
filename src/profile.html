@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="md shadow-lg rounded-3 p-0">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="btn-group-vertical">
+                  <a href="#" class="btn btn-link text-start active" aria-current="page">
+                    <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg>
+                    <span>My bids</span>
+                  </a>
+                  <a href="#" class="btn btn-link text-start">
+                    <svg class="icon icon-profile"><use xlink:href="#icon-profile"></use></svg>
+                    <span>My Profile</span>
+                  </a>
+                  <a href="#" class="btn btn-link text-start">
+                    <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                    <span>Search for Tenders</span>
+                  </a>
+                  <a class="btn btn-link text-start"  data-bs-toggle="collapse" href="#collapseMenu1" role="button" aria-expanded="false" aria-controls="collapseMenu1">
+                    <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
+                    <span class="position-relative">
+                      Mail
+
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <div class="collapse" id="collapseMenu1">
+                    1
+                  </div>
+                  <a class="btn btn-link text-start"  data-bs-toggle="collapse" href="#collapseMenu2" role="button" aria-expanded="false" aria-controls="collapseMenu2">
+                    <svg class="icon icon-settings"><use xlink:href="#icon-settings"></use></svg>
+                    <span>Settings</span>
+                  </a>
+
+                  <div class="collapse" id="collapseMenu2">
+                    2
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-9">
+                <div class="d-flex align-items-center justify-content-between">
+                  <img src="images/logo.svg" alt="ZoomTender" class="img-fluid d-block me-auto">
+
+                  <a href="#">
+                    <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+                  </a>
+
+                  <a href="#">
+                    <svg class="icon icon-alarm"><use xlink:href="#icon-alarm"></use></svg>
+                  </a>
+
+                  <a href="#">
+                    <svg class="icon icon-logout"><use xlink:href="#icon-logout"></use></svg>
+
+                    <span>Log Out</span>
+                  </a>
+                </div>
+
+                <div class="sm shadow rounded-3">
+                  <h1 class="h1 fw-bolder">My Profile</h1>
+
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img src="images/photo.png" alt="" class="img-fluid">
+                      <a href="#" class="btn btn-link">
+                        Change the image
+                      </a>
+                    </div>
+
+                    <div class="col-lg-8">
+                      <form class="form">
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-name" class="col-form-label">Name</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="password" id="profile-name" class="form-control" readonly value="Vasyl">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-email" class="col-form-label">E-mail:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="password" id="profile-email" class="form-control" readonly value="Vasyl@ffff">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-phone" class="col-form-label">Mobile phone:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="password" id="profile-phone" class="form-control" readonly value="+380 686 287 487">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-type" class="col-form-label">Type:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="password" id="profile-type" class="form-control" readonly value="individual">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-expertise" class="col-form-label">Expertise:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="password" id="profile-expertise" class="form-control" readonly value="Expertise 1">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-years-expertise" class="col-form-label">Years of Expertise:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="password" id="profile-years-expertise" class="form-control" readonly value="1-5 years">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-14">
+                          <div class="row">
+                            <div class="col-auto">
+                              <label for="profile-cover-letter" class="col-form-label">Cover letter:</label>
+                            </div>
+                            <div class="col-auto">
+                              <textarea id="profile-cover-letter" rows="4" class="form-control" readonly value="Lorem10" ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                          Change Profile
+                        </button>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./components/sprite.html')
+</body>
+
+</html>

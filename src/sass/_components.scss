@@ -1,1 +1,97 @@
 // Components
+
+html,
+body {
+  width: 100%;
+}
+
+.project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.md {
+  max-width: 980px;
+  width: 100%;
+  min-height: calc(100vh - 240px);
+}
+
+.sm {
+  max-width: 562px;
+  width: 100%;
+  min-height: calc(100vh - 240px);
+}
+
+.sm-x {
+  max-width: 590px;
+}
+
+@media (max-width: 991.98px) {
+  .project {
+    padding: 30px 8px;
+  }
+
+  .sm {
+    padding: 0 8px;
+  }
+
+  .md,
+  .sm {
+    min-height: inherit;
+  }
+}
+
+.logo-md {
+  max-width: 332px;
+  width: 100%;
+}
+
+.logo-xs {
+  max-width: 158px;
+  width: 100%;
+}
+
+.form-check.radio .form-check-input {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-left: -1.3125rem;
+  margin-top: 0.3125rem;
+  border-color: #213a5c;
+  background-size: 0.5625rem;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'><circle cx='4.5' cy='4.5' r='4.5' fill='#1479ff'/></svg>");
+}
+
+.form-check.radio .form-check-label {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 400;
+}
+
+.form-check.radio {
+  padding-left: 1.3125rem;
+}
+
+.file .form-label {
+  font-weight: 500;
+  margin-left: 1.375rem;
+}
+
+.file .btn {
+  color: #fff;
+  background: #cfdae8;
+}
+
+.file .btn:hover {
+  color: #000;
+}
+
+.pin .form-control {
+  padding: 2px;
+  height: 2.375rem;
+  width: 2.375rem;
+  text-align: center;
+}

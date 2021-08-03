@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project py-4 px-2 p-lg-6">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-11">
+            <div class="md bg-light shadow-lg rounded-3 mx-auto py-6 px-2 p-lg-6 position-relative">
+              <a href="index.html" class="position-absolute m-4 top-0 start-0 logo logo-xs">
+                <img src="images/logo.svg" alt="ZoomTender" class="img-fluid d-block mx-auto">
+              </a>
+
+              <div class="row justify-content-center">
+                <div class="col-lg-9">
+                  <div class="sm mx-auto shadow rounded-3 text-center pt-20 pb-3 px-4">
+                    <form class="form ">
+                      <h1 class="h2 fw-bolder mb-4">
+                        Complete your registration
+                      </h1>
+
+                      <div class="form-label">
+                        Please enter the 6 digit verification code <br>that was just emailed to you
+                      </div>
+
+                      <div class="row justify-content-center pt-4 pb-30">
+                        <div class="col-sm-8 col-lg-7">
+                          <div class="pin d-flex justify-content-between">
+                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                      </div>    
+
+                      <div class="row justify-content-center mb-20">
+                        <div class="col-sm-8 col-lg-7 mb-10">
+                          <button type="submit" class="btn btn-primary w-100">
+                            Verify
+                          </button>
+                        </div>
+                        <span class="text-danger-dark">
+                          Wrong code! Please try again
+                        </span>
+                      </div>
+
+                      <div class="form-label fw-normal">
+                        <a href="#" class="text-primary fw-bold text-decoration-none mb-3">Click here</a> to resend the verification code. Please make sure to <br>check your spam folders in case you haven't received the code.
+                      </div>
+
+                    </form>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./components/sprite.html')
+</body>
+
+</html>

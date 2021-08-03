@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project py-4 px-2 p-lg-6">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-11">
+            <div class="md bg-light shadow-lg rounded-3 mx-auto py-6 px-2 p-lg-6 position-relative">
+              <a href="index.html" class="position-absolute m-4 top-0 start-0 logo logo-xs">
+                <img src="images/logo.svg" alt="ZoomTender" class="img-fluid d-block mx-auto">
+              </a>
+
+              <div class="row justify-content-center">
+                <div class="col-lg-9">
+                  <div class="sm mx-auto shadow rounded-3 text-center pt-20 pb-3 px-4">
+                    <form class="form ">
+                      <h1 class="h2 fw-bolder mb-4">
+                        Contractor Registration
+                      </h1>
+
+                      <div class="mb-4">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="registrationType" id="registration-individ" value="individual" >
+                          <label class="form-check-label" for="registration-individ">Individual</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="registrationType" id="registration-company" value="company" checked>
+                          <label class="form-check-label" for="registration-company">Company</label>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-name" class="col-form-label py-0">Name</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-name" class="form-control" placeholder="Name">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-email" class="col-form-label py-0">E-mail</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-email" class="form-control" placeholder="E-mail">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-phone" class="col-form-label py-0">Mobile Phone</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-phone" class="form-control" placeholder="Mobile Phone">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-pass" class="col-form-label py-0">Password</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="password" id="registration-pass" class="form-control" placeholder="Password">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-repass" class="col-form-label py-0">Password confirmation</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="password" id="registration-repass" class="form-control" placeholder="Password confirmation">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-image" class="col-form-label py-0">Image/Logo</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <div class="file d-flex align-items-center">
+                              <a href="#" class="btn btn-light">
+                                Choose File
+                              </a>
+                              <span class="form-label">
+                                No file chosen
+                              </span>
+                            </div>
+                            <!-- <input class="form-control" type="file" id="registration-image"> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-desc" class="col-form-label py-0">Description</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <textarea id="registration-desc" rows="4" class="form-control" placeholder="Description"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-facebook" class="col-form-label py-0">Facebook</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-facebook" class="form-control" placeholder="Facebook">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-twitter" class="col-form-label py-0">Twitter</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-twitter" class="form-control" placeholder="Twitter">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-google" class="col-form-label py-0">Google+</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-google" class="form-control" placeholder="Google+">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-linkedin" class="col-form-label py-0">LinkedIn</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <input type="text" id="registration-linkedin" class="form-control" placeholder="LinkedIn">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-business-type" class="col-form-label py-0">Business Type</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <select class="form-select" id="registration-business-type" aria-label="Business Type">
+                              <option selected>Business Type</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-turnover" class="col-form-label py-0">Turnover</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <select class="form-select" id="registration-turnover" aria-label="Turnover">
+                              <option selected>Turnover</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-number-emloyees" class="col-form-label py-0">Number of Emloyees</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <select class="form-select" id="registration-number-emloyees" aria-label="Number of Emloyees">
+                              <option selected>Number of Emloyees</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-10">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-years-experience" class="col-form-label py-0">Years of Experience</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7">
+                            <select class="form-select" id="registration-years-experience" aria-label="Years of Experience">
+                              <option selected>Years of Experience</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>   
+
+                      <div class="my-4">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                            <label for="registration-expertise" class="col-form-label py-0">Expertise</label>
+                          </div>
+                          <div class="col-sm-8 col-lg-7 text-start">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="registrationExpertise" id="registration-expertise-1" value="expertise-1" checked>
+                              <label class="form-check-label" for="registration-expertise-1">Expertise 1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="registrationExpertise" id="registration-expertise-2" value="expertise-2">
+                              <label class="form-check-label" for="registration-expertise-2">Expertise 2</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+
+                      <div class="row justify-content-center">
+                        <div class="col-sm-8 col-lg-7 mb-10">
+                          <button type="submit" class="btn btn-primary w-100">
+                            Register
+                          </button>
+                        </div>
+
+                        <div class="col-12">
+                          <a href="#" class="btn btn-link">
+                            Already have an account?
+                          </a>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./components/sprite.html')
+</body>
+
+</html>

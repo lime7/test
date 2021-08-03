@@ -24,7 +24,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: '[name].js'
-    // publicPath: '/'
+    // publicPath: ''
   },
   /**
    * Module
@@ -140,6 +140,96 @@ module.exports = {
       // favicon: paths.static + '/favicon.ico',
       filename: 'index.html',
       template: paths.src + '/index.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Profile',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'profile.html',
+      template: paths.src + '/profile.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Tenders',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'tenders.html',
+      template: paths.src + '/tenders.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Sign UP',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'signup.html',
+      template: paths.src + '/signup.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Create Account',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'create-account.html',
+      template: paths.src + '/create-account.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Registaration contractor Company',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'registration-contractror-company.html',
+      template: paths.src + '/registration-contractror-company.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Registaration contractor Individual',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'registration-contractror-individual.html',
+      template: paths.src + '/registration-contractror-individual.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Registaration Employer',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'registration-employer.html',
+      template: paths.src + '/registration-employer.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Registaration Complete',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'registration-complete.html',
+      template: paths.src + '/registration-complete.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Reset Password',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'reset-password.html',
+      template: paths.src + '/reset-password.html', // template file
       minify: false
       // hash: true,
       // inject: false

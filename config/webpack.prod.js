@@ -1,23 +1,23 @@
 'use strict'
 const paths = require('./paths')
-const {merge} = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = merge(common, {
-	/**
+  /**
    * Mode
    *
    * Set the mode to development or production.
-   */	   
-	mode: 'production', // Minify webpack JS bundle
+   */
+  mode: 'production', // Minify webpack JS bundle
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/',
-    filename: '[name].[contenthash].bundle.js',
+    publicPath: '',
+    filename: '[name].[contenthash].bundle.js'
   },
   plugins: [
     /**
@@ -30,8 +30,8 @@ module.exports = merge(common, {
      */
     new MiniCssExtractPlugin({
       filename: 'styles/[name].[contenthash].css',
-      chunkFilename: '[id].css',
-    }),
+      chunkFilename: '[id].css'
+    })
   ],
   module: {
     rules: [
@@ -42,14 +42,14 @@ module.exports = merge(common, {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 1,
-            },
+              importLoaders: 1
+            }
           },
           'postcss-loader',
-          'sass-loader',
-        ],
-      },
-    ],
+          'sass-loader'
+        ]
+      }
+    ]
   },
 
   /**
@@ -70,14 +70,14 @@ module.exports = merge(common, {
         vendor: {
           test: /[\\/]node_modules[\\/](react|react-dom|lodash)[\\/]/,
           name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
+          chunks: 'all'
+        }
+      }
+    }
   },
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
-    maxAssetSize: 512000,
+    maxAssetSize: 512000
   }
 })
