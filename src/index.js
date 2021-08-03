@@ -13,6 +13,8 @@ if (process.env.NODE_ENV === 'development') {
   require('./create-account.html')
   require('./profile.html')
   require('./bids.html')
+  require('./bids-submit.html')
+  require('./bids-view.html')
 }
 
 console.log('%c%s', 'color: orangered;', 'S>>>> index.js')

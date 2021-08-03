@@ -1,7 +1,9 @@
 {
 	"extends": "stylelint-config-standard",
-	"fix": true,
+	"fix": false,
 	"rules": {
-  	"at-rule-no-unknown": null
+  	"at-rule-no-unknown": null,
+  	"no-descending-specificity": null,
+  	"number-leading-zero": null
 	}
 }

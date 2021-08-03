@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project py-4 px-2 p-lg-6">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-12">
+            <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
+              <div class="row g-0">
+                <div class="col-lg-2">
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                      <div class="bg-white btn-group-vertical h-100 justify-content-start">
+                        <div class="btn-group-item">
+                          <a href="#" class="btn btn-link text-start active" aria-current="page">
+                            <span class="position-relative me-3">
+                              <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg>
+                            </span>
+                            <span>My bids</span>
+                          </a>
+                        </div>
+
+                        <div class="btn-group-item">
+                          <a href="#" class="btn btn-link text-start">
+                            <span class="position-relative me-3">
+                              <svg class="icon icon-profile"><use xlink:href="#icon-profile"></use></svg>
+                            </span>
+                            <span>My Profile</span>
+                          </a>
+                        </div>
+
+                        <div class="btn-group-item">
+                          <a href="#" class="btn btn-link text-start">
+                            <span class="position-relative me-3">
+                              <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                            </span>
+                            <span>Search for Tenders</span>
+                          </a>
+                        </div>
+
+                        <div class="btn-group-item">
+                          <a class="btn btn-link text-start"  data-bs-toggle="collapse" href="#collapseMenu1" role="button" aria-expanded="false" aria-controls="collapseMenu1">
+                            <span class="position-relative me-3">
+                              <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
+                              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            </span>                     
+
+                            <span>
+                              Mail                       
+                            </span>
+                          </a>
+
+                          <div class="collapse " id="collapseMenu1">
+                            <ul class="list-unstyled mb-0 bg-primary text-white">
+                              <li class="active">
+                                <a href="#" class="text-reset text-decoration-none">
+                                  Inbox
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  Sent Messages
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  New Messages 
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  Trash
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="btn-group-item">
+                          <a class="btn btn-link text-start"  data-bs-toggle="collapse" href="#collapseMenu2" role="button" aria-expanded="false" aria-controls="collapseMenu2">
+                            <span class="position-relative me-3">
+                              <svg class="icon icon-settings"><use xlink:href="#icon-settings"></use></svg>
+                            </span>
+                            <span>Settings</span>
+                          </a>
+
+                          <div class="collapse bg-primary text-white" id="collapseMenu2">
+                            <ul class="list-unstyled mb-0">
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  Change password
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  Notification settings
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  E-mail settings
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  SMS settings
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-reset text-decoration-none">
+                                  Activity Log
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-10">
+                  <div class="position-relative px-2 py-lg-6 px-lg-30">
+                    <div class="panel d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 pt-3 px-lg-30 mb-3">
+                      <a class="btn btn-primary btn-sm d-lg-none ms-0 me-3 " data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                        <svg class="icon icon-menu text-white"><use xlink:href="#icon-menu"></use></svg>
+                      </a>
+
+                      <a href="index.html" class="d-block logo logo-xs ms-0 me-auto">
+                        <img src="images/logo.svg" alt="ZoomTender" class="img-fluid d-block">
+                      </a>
+
+                      <a href="#" class="text-reset text-decoration-none d-inline-flex align-items-center">
+                        <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+                      </a>
+
+                      <a href="#" class="text-reset text-decoration-none d-inline-flex align-items-center">
+                        <svg class="icon icon-alarm"><use xlink:href="#icon-alarm"></use></svg>
+                      </a>
+
+                      <a href="#" class="text-reset text-decoration-none d-inline-flex align-items-center">
+                        <svg class="icon icon-logout"><use xlink:href="#icon-logout"></use></svg>
+
+                        <span class="form-label fw-normal">Log Out</span>
+                      </a>
+                    </div>
+
+                    <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
+                      <h1 class="h1 fw-bolder">Submit Bid</h1>
+                      <!-- <h6 class="fsz-18 mb-20">
+                        List of Active Tenders you have bid on
+                      </h6> -->
+                      
+                      <form class="form">
+                        
+                        <ul class="list-unstyled mb-30 lh-lg">
+                          <li class="mb-1">
+                            <span class="form-label me-2">Name:</span>
+                            <small>Bricks and Mortar</small>
+                          </li>
+                          <li class="mb-1">
+                            <span class="form-label me-2">Status:</span>
+                            <small>Active</small>
+                          </li>
+                          <li class="mb-1">
+                            <span class="form-label me-2">Pricing View:</span>
+                            <small>Open</small>
+                          </li>
+                          <li class="mb-1">
+                            <span class="form-label me-2">Visibility:</span>
+                            <small>Private</small>
+                          </li>
+                          <li class="mb-1">
+                            <span class="form-label me-2">Date Posted:</span>
+                            <small>11/20/2019</small>
+                          </li>
+                          <li class="mb-1">
+                            <span class="form-label me-2">Deadline:</span>
+                            <small>11/30/2019 5pm</small>
+                          </li>
+                          <li class="mb-0">
+                            <span class="form-label me-2">Time Left:</span>
+                            <small>2 days 11 hours minutes </small>
+                          </li>
+                        </ul>
+
+                        <div class="table-responsive table-rounded mb-30 shadow bg-white rounded-1">
+                          <table class="table table-striped mb-0">
+                            <thead>
+                              <tr>
+                                <th class="text-center"><div>S No</div></th>
+                                <th><div>Item Name</div></th>
+                                <th><div>Description</div></th>
+                                <th><div>Quantity</div></th>
+                                <th><div>Unit</div></th>
+                                <th><div>Price</div></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center"><div>1</div></td>
+                                <td><div>Item 1</div></td>
+                                <td><div>Desc 1</div></td>
+                                <td><div>100</div></td>
+                                <td><div>bag</div></td>
+                                <td class="ps-0"><div><input type="text" class="form-control"></div></td>
+                              </tr>
+                              <tr>
+                                <td class="text-center"><div>2</div></td>
+                                <td><div>Item 2</div></td>
+                                <td><div>Desc 2</div></td>
+                                <td><div>100</div></td>
+                                <td><div>bag</div></td>
+                                <td class="ps-0"><div><input type="text" class="form-control"></div></td>
+                              </tr>
+                              <tr>
+                                <td class="text-center"><div>3</div></td>
+                                <td><div>Item 3</div></td>
+                                <td><div>Desc 3</div></td>
+                                <td><div>100</div></td>
+                                <td><div>bag</div></td>
+                                <td class="ps-0"><div><input type="text" class="form-control"></div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <div class="text-end pt-10">
+                          <button type="submit" class="btn btn-primary px-4">
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./components/sprite.html')
+</body>
+
+</html>

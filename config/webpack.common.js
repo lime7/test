@@ -146,26 +146,6 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Profile',
-      // favicon: paths.static + '/favicon.ico',
-      filename: 'profile.html',
-      template: paths.src + '/profile.html', // template file
-      minify: false
-      // hash: true,
-      // inject: false
-    }),
-
-    new HtmlWebpackPlugin({
-      title: 'Bids',
-      // favicon: paths.static + '/favicon.ico',
-      filename: 'bids.html',
-      template: paths.src + '/bids.html', // template file
-      minify: false
-      // hash: true,
-      // inject: false
-    }),
-
-    new HtmlWebpackPlugin({
       title: 'Sign UP',
       // favicon: paths.static + '/favicon.ico',
       filename: 'signup.html',
@@ -230,6 +210,46 @@ module.exports = {
       // favicon: paths.static + '/favicon.ico',
       filename: 'reset-password.html',
       template: paths.src + '/reset-password.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Profile',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'profile.html',
+      template: paths.src + '/profile.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Bids',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'bids.html',
+      template: paths.src + '/bids.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Submit Bids',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'bids-submit.html',
+      template: paths.src + '/bids-submit.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'View Bids',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'bids-view.html',
+      template: paths.src + '/bids-view.html', // template file
       minify: false
       // hash: true,
       // inject: false
