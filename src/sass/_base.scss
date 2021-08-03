@@ -226,3 +226,41 @@ textarea.form-control[readonly] {
 .dropdown-menu li + li {
   border-top: 1px solid $gray-300;
 }
+
+.card {
+  position: relative;
+  transition: $transition-base;
+
+  &-title {
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    font-weight: $form-label-font-weight;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: #fff;
+    border-color: #fff;
+    box-shadow: $box-shadow-lg;
+    z-index: 5;
+
+    .card-title a {
+      color: $blue;
+    }
+  }
+}
+
+.card-text {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+}
+
+small {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+}

@@ -142,13 +142,16 @@ $badge-padding-x:                   .3125em !default;
 $badge-border-radius:               50% !default;
 $offcanvas-box-shadow:              $box-shadow-lg !default;
 
+$small-font-size:                   .875rem !default;
+$small-line-height:                 1.3125rem !default;
+
 $table-th-font-weight:              600 !default;
 $table-cell-padding-y:              0 !default;
 $table-cell-padding-x:              .5rem !default;
 $table-striped-bg:                  #f7faff !default;
 $table-border-width:                0 !default;
-$table-font-size:                   .875rem !default;
-$table-line-height:                 1.3125rem !default;
+$table-font-size:                   $small-font-size !default;
+$table-line-height:                 $small-line-height !default;
 
 $dropdown-border-width:             0 !default;
 $dropdown-padding-y:                0 !default;
@@ -157,3 +160,10 @@ $dropdown-box-shadow:               $box-shadow-lg !default;
 $dropdown-border-radius:            .5rem !default;
 $dropdown-item-padding-y:           $spacer * .25 !default;
 $dropdown-item-padding-x:           $spacer * .75 !default;
+
+$card-border-color:                 rgba($gray-300, .5) !default;
+$card-spacer-y:                     $spacer * .5 !default;
+$card-spacer-x:                     $spacer !default;
+$card-title-spacer-y:               0 !default;
+$card-border-radius:                .5rem !default;
+$card-bg:                           transparent !default;
