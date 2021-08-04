@@ -14,7 +14,7 @@
 <body>
   <div class="project py-4 px-2 p-lg-6">
     <main class="page-content">
-      <div class="container">
+      <div class="container-fluid px-lg-0">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-12">
             <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
@@ -24,17 +24,18 @@
                 </div>
 
                 <div class="col-lg-10">
-                  <div class="position-relative px-2 py-lg-6 px-lg-30">
+                  <div class="position-relative px-2 pb-2 pt-lg-6 pb-lg-30 px-lg-4 ps-xl-0 pe-xl-40">
                     @require('./../components/navbar.html')
 
-                    <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
-                      <h1 class="h1 fw-bolder">Search for Tenders</h1>
-                      <h6 class="fsz-18 mb-30">
-                        Filters
-                      </h6>
+                    <div class="bg-white shadow rounded-3 pt-4 px-2 pb-36 px-lg-4">
+                      <h1 class="h1 fw-bolder mb-0">Search for Tenders</h1>
+                      
 
                       <div class="row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
+                          <h6 class="fsz-18 mb-30">
+                            Filters
+                          </h6>
 
                           <div class="row">
                             <div class="col-lg-8">
@@ -60,7 +61,7 @@
                                   </div>
                                 </div>
 
-                                <div class="form-label mb-10">
+                                <div class="form-label mb-20">
                                   Type of Tender
                                 </div>
 
@@ -91,7 +92,7 @@
                                   </li>
                                 </ul>
 
-                                <button type="submit" class="btn btn-primary px-4">
+                                <button type="submit" class="btn btn-primary px-lg-5">
                                   Search
                                 </button>
                               </form>
@@ -99,17 +100,17 @@
                           </div>
                         </div>
 
-                        <div class="col-sm-6">
-                          <h6 class="fsz-18 mb-1">
+                        <div class="col-sm-6 pt-10">
+                          <h6 class="fsz-18 mb-0 lh-base ps-xl-6">
                             Search Results
                           </h6>
                           <div class="d-block">
-                            <p>
+                            <p class="mb-0 ps-xl-6">
                               <small>
                                 We didn`t find any tenders that match <br> your search
                               </small>
                             </p>
-                            <img src="../images/img-2.svg" alt="" class="img-fluid">
+                            <img src="../images/img-2.svg" alt="" class="img-fluid d-block ms-xl-4">
                           </div>
 
                           <div class="d-none">

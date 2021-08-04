@@ -14,7 +14,7 @@
 <body>
   <div class="project py-4 px-2 p-lg-6">
     <main class="page-content">
-      <div class="container">
+      <div class="container-fluid px-lg-0">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-12">
             <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
@@ -24,23 +24,23 @@
                 </div>
 
                 <div class="col-lg-10">
-                  <div class="position-relative px-2 py-lg-6 px-lg-30">
+                  <div class="position-relative px-2 pb-2 pt-lg-6 pb-lg-30 px-lg-4 ps-xl-0 pe-xl-40">
                     @require('./../components/navbar.html')
 
-                    <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
-                      <h1 class="h1 fw-bolder">My Profile</h1>
+                    <div class="bg-white shadow rounded-3 pt-4 px-2 pb-36 px-lg-4">
+                      <h1 class="h1 fw-bolder mb-14">My Profile</h1>
 
                       <div class="row justify-content-between">
                         <div class="col-md-4 mb-4">
-                          <img src="../images/photo.png" alt="" class="img-fluid d-block">
+                          <img src="../images/photo.png" alt="" class="img-fluid d-block mb-2">
                           <a href="#" class="btn btn-link">
                             Change the image
                           </a>
                         </div>
 
-                        <div class="col-md-8 col-lg-7">
+                        <div class="col-md-8 col-lg-7 mt-xl-n14">
                           <form class="form">
-                            <div class="mb-0">
+                            <div class="mb-2">
                               <div class="row g-0 align-items-center">
                                 <div class="col-sm-auto">
                                   <label for="profile-name" class="col-form-label py-0">Name:</label>
@@ -51,7 +51,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-0">
+                            <div class="mb-2">
                               <div class="row g-0 align-items-center">
                                 <div class="col-sm-auto">
                                   <label for="profile-email" class="col-form-label py-0">E-mail:</label>
@@ -62,7 +62,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-0">
+                            <div class="mb-2">
                               <div class="row g-0 align-items-center">
                                 <div class="col-sm-auto">
                                   <label for="profile-phone" class="col-form-label py-0">Mobile phone:</label>
@@ -73,7 +73,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-0">
+                            <div class="mb-2">
                               <div class="row g-0 align-items-center">
                                 <div class="col-sm-auto">
                                   <label for="profile-type" class="col-form-label py-0">Type:</label>
@@ -84,7 +84,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-0">
+                            <div class="mb-2">
                               <div class="row g-0 align-items-center">
                                 <div class="col-sm-auto">
                                   <label for="profile-expertise" class="col-form-label py-0">Expertise:</label>
@@ -95,7 +95,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-0">
+                            <div class="mb-2">
                               <div class="row g-0 align-items-center">
                                 <div class="col-sm-auto">
                                   <label for="profile-years-expertise" class="col-form-label py-0">Years of Expertise:</label>
@@ -106,19 +106,19 @@
                               </div>
                             </div>
 
-                            <div class="mb-0">
-                              <div class="row g-0 align-items-center">
+                            <div class="mb-2">
+                              <div class="row g-0">
                                 <div class="col-sm-auto">
                                   <label for="profile-cover-letter" class="col-form-label py-0">Cover letter:</label>
                                 </div>
                                 <div class="col">
-                                  <textarea id="profile-cover-letter" rows="5" class="form-control" readonly >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt</textarea>
+                                  <textarea id="profile-cover-letter" rows="4" class="form-control" readonly >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt</textarea>
                                 </div>
                               </div>
                             </div>
 
-                            <div class="row g-0 mt-3">
-                              <div class="col-sm-6 col-lg-5">
+                            <div class="row g-0">
+                              <div class="col-sm-6 col-lg-6 col-xl-5">
                                 <button type="submit" class="btn btn-primary w-100">
                                   Change Profile
                                 </button>

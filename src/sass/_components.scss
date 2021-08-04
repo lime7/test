@@ -139,7 +139,7 @@ body {
 }
 
 .btn-group-item {
-  margin-bottom: .75rem;
+  margin-bottom: .625rem;
   position: relative;
   width: 100%;
 }
@@ -334,6 +334,7 @@ body {
     display: block !important;
     height: 100%;
     box-shadow: none;
+    max-width: 170px;
   }
 
   #offcanvasMenu .offcanvas-header {
@@ -401,6 +402,14 @@ body {
   .table-x th:last-child,
   .table-x td:last-child {
     padding-right: .5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .table-x {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 }
 
