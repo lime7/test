@@ -28,9 +28,218 @@
                     @require('./../components/navbar.html')
 
                     <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
-                      <h1 class="h1 fw-bolder">My Tenders</h1>
+                      <h1 class="h1 fw-bolder">Create New Tender</h1>
                       
-                      
+                      <form class="form">
+
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="mb-4 pb-2">
+                              <small class="d-block mb-10">
+                                Step 2/2
+                              </small>
+
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-title" class="col-form-label py-0">Title:</label>
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <input type="text" id="tender-title" class="form-control" placeholder="IT Technologies" value="Title 1" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-pricing" class="col-form-label py-0">Pricing Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <select class="form-select d-none" id="tender-pricing" aria-label="Business Type">
+                                      <option value="1" selected>Option 1</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <input type="text" class="form-control" value="Option 1" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-visibility" class="col-form-label py-0">Tender Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <select class="form-select d-none" id="tender-visibility" aria-label="Business Type">
+                                      <option value="1" selected>Option 1</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <input type="text" class="form-control" value="Option 1" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-visibility" class="col-form-label py-0">Deadline:</label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <div class="calendar d-none">
+                                      <input type="text" name="Deadline" class="form-control" value="11/07/2021 " readonly>
+
+                                      <button class="btn h-100 border-start rounded-0 position-absolute top-0 end-0">
+                                        <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+                                      </button>
+                                    </div>
+
+                                    <input type="text" class="form-control" value="Option 1" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-industry" class="col-form-label py-0">Industry: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <select class="form-select d-none" id="tender-industry" aria-label="Business Type" readonly>
+                                      <option value="1" selected>Option 1</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <input type="text" class="form-control" value="Option 1" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-start g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-description" class="col-form-label py-0">Description: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <textarea id="tender-description" rows="4" class="form-control" value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt" readonly>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt</textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <img src="../images/img-3.svg" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-10">
+                          <div class="col-lg-12  mb-2">
+                            <div class="form-label">
+                              Item(s)
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="table-responsive table-rounded mb-3 shadow bg-white rounded-1">
+                              <table class="table table-striped mb-0">
+                                <thead>
+                                  <tr>
+                                    <th class="text-center"><div>S No</div></th>
+                                    <th><div>Item Name</div></th>
+                                    <th><div>Description</div></th>
+                                    <th><div>Quantity</div></th>
+                                    <th><div>Unit</div></th>
+                                    <th><div>&nbsp;</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <tr>
+                                    <td class="text-center"><div>3</div></td>
+                                    <td><div>Item1</div></td>
+                                    <td><div>Desc 1</div></td>
+                                    <td><div>100</div></td>
+                                    <td><div>bag</div></td>
+                                    <td>
+                                      <div>
+                                        &nbsp;
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-center"><div>3</div></td>
+                                    <td><div>Item1</div></td>
+                                    <td><div>Desc 1</div></td>
+                                    <td><div>100</div></td>
+                                    <td><div>bag</div></td>
+                                    <td>
+                                      <div>
+                                        &nbsp;
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-center"><div>3</div></td>
+                                    <td><div>Item1</div></td>
+                                    <td><div>Desc 1</div></td>
+                                    <td><div>100</div></td>
+                                    <td><div>bag</div></td>
+                                    <td>
+                                      <div>
+                                        &nbsp;
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>                      
+
+
+                        <div class="row">
+                          <div class="col-lg-12  mb-2">
+                            <div class="form-label">
+                              Attachments
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <!-- <a href="#" class="btn btn-light px-4">
+                              + Add More
+                            </a> -->
+                            <span class="form-label fw-normal">
+                              File1.pdf
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="text-end">
+                          <a href="#" class="btn btn-light px-4">
+                            Back
+                          </a>
+                          <a href="#" class="btn btn-primary px-4 ms-3">
+                            Next
+                          </a>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>

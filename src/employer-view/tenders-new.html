@@ -45,8 +45,8 @@
                             </div>
 
                             <div class="mb-2">
-                              <div class="row justify-content-center align-items-center">
-                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
                                   <label for="tender-title" class="col-form-label py-0">Title:</label>
                                 </div>
                                 <div class="col-sm-8 col-lg-7">
@@ -58,8 +58,8 @@
                             </div>
 
                             <div class="mb-2">
-                              <div class="row justify-content-center align-items-center">
-                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
                                   <label for="tender-pricing" class="col-form-label py-0">Pricing Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7">
@@ -69,14 +69,15 @@
                                       <option value="2">Two</option>
                                       <option value="3">Three</option>
                                     </select>
+                                    <input type="hidden" class="form-control" value="Option 1" readonly >
                                   </div>
                                 </div>
                               </div>
                             </div>
 
                             <div class="mb-2">
-                              <div class="row justify-content-center align-items-center">
-                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
                                   <label for="tender-visibility" class="col-form-label py-0">Tender Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7">
@@ -86,31 +87,36 @@
                                       <option value="2">Two</option>
                                       <option value="3">Three</option>
                                     </select>
+                                    <input type="hidden" class="form-control" value="Option 1" readonly >
                                   </div>
                                 </div>
                               </div>
                             </div>
 
                             <div class="mb-2">
-                              <div class="row justify-content-center align-items-center">
-                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
                                   <label for="tender-visibility" class="col-form-label py-0">Deadline:</label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7">
-                                  <div class="calendar position-relative">
-                                    <input type="text" name="Deadline" class="form-control" placeholder="11/07/2021 ">
+                                  <div class="position-relative">
+                                    <div class="calendar">
+                                      <input type="text" name="Deadline" class="form-control" value="11/07/2021 " readonly>
 
-                                    <button class="btn h-100 border-start rounded-0 position-absolute top-0 end-0">
-                                      <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
-                                    </button>
+                                      <button class="btn h-100 border-start rounded-0 position-absolute top-0 end-0">
+                                        <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+                                      </button>
+                                    </div>
+
+                                    <input type="hidden" class="form-control" value="Option 1" readonly>
                                   </div>
                                 </div>
                               </div>
                             </div>
 
                             <div class="mb-2">
-                              <div class="row justify-content-center align-items-center">
-                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                              <div class="row justify-content-center align-items-center g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
                                   <label for="tender-industry" class="col-form-label py-0">Industry: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7">
@@ -120,19 +126,20 @@
                                       <option value="2">Two</option>
                                       <option value="3">Three</option>
                                     </select>
+                                    <input type="hidden" class="form-control" value="Option 1" readonly >
                                   </div>
                                 </div>
                               </div>
                             </div>
 
                             <div class="mb-2">
-                              <div class="row justify-content-center align-items-center">
-                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                              <div class="row justify-content-center align-items-start g-2">
+                                <div class="col-sm-4 col-lg-5 text-start text-sm-end mb-2 mb-sm-0">
                                   <label for="tender-description" class="col-form-label py-0">Description: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7">
                                   <div class="position-relative">
-                                    <textarea id="tender-description" rows="4" class="form-control">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt </textarea>
+                                    <textarea id="tender-description" rows="4" class="form-control" placeholder="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt"></textarea>
                                   </div>
                                 </div>
                               </div>
@@ -144,7 +151,7 @@
                           </div>
                         </div>
                         
-                        <div class="row">
+                        <div class="row mb-10">
                           <div class="col-lg-12  mb-2">
                             <div class="form-label">
                               Item(s)
@@ -166,16 +173,42 @@
                                 <tbody>
                                   <tr>
                                     <td class="text-center"><div>1</div></td>
-                                    <td><div>Write...</div></td>
-                                    <td><div>Write...</div></td>
-                                    <td><div>Write...</div></td>
-                                    <td><div>Write...</div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
                                     <td>
                                       <div>
-                                        <a href="#">
-                                          <svg class="icon icon-close">
-                                            <use xlink:href="#icon-close"></use>
-                                          </svg>
+                                        <a href="#" class="btn btn-close">
+                                          <span class="text-write"></span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-center"><div>2</div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td>
+                                      <div>
+                                        <a href="#" class="btn btn-close">
+                                          <span class="text-write"></span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="text-center"><div>3</div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td><div><div class="text-write">Write...</div></div></td>
+                                    <td>
+                                      <div>
+                                        <a href="#" class="btn btn-close">
+                                          <span class="text-write"></span>
                                         </a>
                                       </div>
                                     </td>
