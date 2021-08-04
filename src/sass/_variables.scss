@@ -167,3 +167,9 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               0 !default;
 $card-border-radius:                .5rem !default;
 $card-bg:                           transparent !default;
+
+$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-box-shadow-sm-up:    $box-shadow-lg !default;
+$modal-content-border-width:        0 !default;
+$modal-header-padding-y:            .875rem !default;
+$modal-inner-padding:               $spacer * 1.875 !default;

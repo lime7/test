@@ -54,6 +54,16 @@ html {
       text-decoration: none;
     }
   }
+
+  &-danger {
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
+  }
 }
 
 .bg-light {
