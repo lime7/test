@@ -295,6 +295,16 @@ module.exports = {
       // inject: false
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Password',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'password.html',
+      template: paths.src + '/password.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
     new StylelintPlugin({
       files: '**/*.s?(a|c)ss'
     })

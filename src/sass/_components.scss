@@ -447,3 +447,28 @@ body {
 .icon-delete {
   opacity: .8;
 }
+
+.password input {
+  letter-spacing: 0.205em;
+  font-weight: 500;
+}
+
+.password .btn {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.password .btn .icon {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.password .btn:hover .icon,
+.password .btn:active .icon,
+.password .btn.active .icon {
+  color: #bac8db;
+}
