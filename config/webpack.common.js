@@ -325,6 +325,66 @@ module.exports = {
       // inject: false
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'My Tenders',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'tenders.html',
+      template: paths.src + '/employer-view/tenders.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Create New Tender',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'tenders-new.html',
+      template: paths.src + '/employer-view/tenders-new.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Create New Tender',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'tenders-new-save.html',
+      template: paths.src + '/employer-view/tenders-new-save.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Your Tender “Title” is Now Live! ',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'tenders-live.html',
+      template: paths.src + '/employer-view/tenders-live.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Search for Service Providers',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'search-service.html',
+      template: paths.src + '/employer-view/search-service.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Tender Details',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'tenders-details.html',
+      template: paths.src + '/employer-view/tenders-details.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
     new StylelintPlugin({
       files: '**/*.s?(a|c)ss'
     })

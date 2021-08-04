@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project py-4 px-2 p-lg-6">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-12">
+            <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
+              <div class="row g-0">
+                <div class="col-lg-2">
+                  @require('./../components/menu-employer.html')
+                </div>
+
+                <div class="col-lg-10">
+                  <div class="position-relative px-2 py-lg-6 px-lg-30">
+                    @require('./../components/navbar.html')
+
+                    <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
+                      <h1 class="h1 fw-bolder">Create New Tender</h1>
+                      
+                      <form class="form">
+
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="mb-4 pb-2">
+                              <small class="d-block mb-10">
+                                Step 1/2
+                              </small>
+
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-title" class="col-form-label py-0">Title:</label>
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <input type="text" id="tender-title" class="form-control" placeholder="IT Technologies">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-pricing" class="col-form-label py-0">Pricing Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <select class="form-select" id="tender-pricing" aria-label="Business Type">
+                                      <option value="1" selected>Option 1</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-visibility" class="col-form-label py-0">Tender Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <select class="form-select" id="tender-visibility" aria-label="Business Type">
+                                      <option value="1" selected>Option 1</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-visibility" class="col-form-label py-0">Deadline:</label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="calendar position-relative">
+                                    <input type="text" name="Deadline" class="form-control" placeholder="11/07/2021 ">
+
+                                    <button class="btn h-100 border-start rounded-0 position-absolute top-0 end-0">
+                                      <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-industry" class="col-form-label py-0">Industry: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <select class="form-select" id="tender-industry" aria-label="Business Type">
+                                      <option value="1" selected>Option 1</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-2">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-4 col-lg-3 text-start text-sm-end mb-2 mb-sm-0">
+                                  <label for="tender-description" class="col-form-label py-0">Description: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
+                                </div>
+                                <div class="col-sm-8 col-lg-7">
+                                  <div class="position-relative">
+                                    <textarea id="tender-description" rows="4" class="form-control">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt </textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <img src="../images/img-3.svg" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                          <div class="col-lg-12  mb-2">
+                            <div class="form-label">
+                              Item(s)
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="table-responsive table-rounded mb-3 shadow bg-white rounded-1">
+                              <table class="table table-striped mb-0">
+                                <thead>
+                                  <tr>
+                                    <th class="text-center"><div>S No</div></th>
+                                    <th><div>Item Name</div></th>
+                                    <th><div>Description</div></th>
+                                    <th><div>Quantity</div></th>
+                                    <th><div>Unit</div></th>
+                                    <th><div>&nbsp;</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="text-center"><div>1</div></td>
+                                    <td><div>Write...</div></td>
+                                    <td><div>Write...</div></td>
+                                    <td><div>Write...</div></td>
+                                    <td><div>Write...</div></td>
+                                    <td>
+                                      <div>
+                                        <a href="#">
+                                          <svg class="icon icon-close">
+                                            <use xlink:href="#icon-close"></use>
+                                          </svg>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <div class="text-center">
+                              <a href="#" class="btn btn-light px-4">
+                                + Add More
+                              </a>
+                            </div>
+                          </div>
+                        </div>                      
+
+
+                        <div class="row">
+                          <div class="col-lg-12  mb-2">
+                            <div class="form-label">
+                              Attachments
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <a href="#" class="btn btn-light px-4">
+                              + Add More
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="text-end">
+                          <a href="#" class="btn btn-light px-4">
+                            Back
+                          </a>
+                          <a href="#" class="btn btn-primary px-4 ms-3">
+                            Next
+                          </a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./../components/sprite.html')
+</body>
+
+</html>

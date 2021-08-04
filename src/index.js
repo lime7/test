@@ -23,6 +23,12 @@ if (process.env.NODE_ENV === 'development') {
   require('./contractor-view/notifications-settings.html')
   require('./contractor-view/password.html')
   require('./contractor-view/email.html')
+  require('./employer-view/tenders.html')
+  require('./employer-view/tenders-new.html')
+  require('./employer-view/tenders-new-save.html')
+  require('./employer-view/tenders-details.html')
+  require('./employer-view/tenders-live.html')
+  require('./employer-view/search-service.html')
 }
 
 console.log('%c%s', 'color: orangered;', 'S>>>> index.js')

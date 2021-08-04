@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project py-4 px-2 p-lg-6">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-12">
+            <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
+              <div class="row g-0">
+                <div class="col-lg-2">
+                  @require('./../components/menu-employer.html')
+                </div>
+
+                <div class="col-lg-10">
+                  <div class="position-relative px-2 py-lg-6 px-lg-30">
+                    @require('./../components/navbar.html')
+
+                    <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
+                      <h1 class="h1 fw-bolder">My Tenders</h1>
+                      
+                      <div class="table-responsive table-x mb-30">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th><div>Tender</div></th>
+                              <th><div>Field</div></th>
+                              <th>
+                                <div class="dropdown">
+                                  <a class="dropdown-toggle" type="button" id="dropdownVisibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Visibility
+                                  </a>
+
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownVisibility">
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleVisibility" id="exampleVisibility1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleVisibility1">
+                                          Open view
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleVisibility" id="exampleVisibility2" value="option2">
+                                        <label class="form-check-label" for="exampleVisibility2">
+                                          Closed view
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleVisibility" id="exampleVisibility3" value="option3">
+                                        <label class="form-check-label" for="exampleVisibility3">
+                                          Ather
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="dropdown">
+                                  <a class="dropdown-toggle" type="button" id="dropdownView" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    View
+                                  </a>
+
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownView">
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleView" id="exampleView1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleView1">
+                                          Open view
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleView" id="exampleView2" value="option2">
+                                        <label class="form-check-label" for="exampleView2">
+                                          Closed view
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleView" id="exampleView3" value="option3">
+                                        <label class="form-check-label" for="exampleView3">
+                                          Ather
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th><div>Posted</div></th>
+                              <th><div>Deadline</div></th>
+                              <th>
+                                <div class="dropdown">
+                                  <a class="dropdown-toggle" type="button" id="dropdownStatus" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Status
+                                  </a>
+
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownStatus">
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleStatus" id="exampleStatus1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleStatus1">
+                                          Open Status
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleStatus" id="exampleStatus2" value="option2">
+                                        <label class="form-check-label" for="exampleStatus2">
+                                          Closed Status
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                      <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="exampleStatus" id="exampleStatus3" value="option3">
+                                        <label class="form-check-label" for="exampleStatus3">
+                                          Ather
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th><div>Summary</div></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><div>Bricks and stuff</div></td>
+                              <td><div>Consulting</div></td>
+                              <td><div>Public</div></td>
+                              <td><div><a href="#">Open view</a></div></td>
+                              <td><div>12/11/2018 1:15</div></td>
+                              <td><div>12/11/20181:20</div></td>
+                              <td><div>Bidding Complete</div></td>
+                              <td><div><a href="#">View</a></div></td>
+                            </tr>
+                            <tr>
+                              <td><div>Bricks and stuff</div></td>
+                              <td><div>Consulting</div></td>
+                              <td><div>Public</div></td>
+                              <td><div><a href="#">Open view</a></div></td>
+                              <td><div>12/11/2018 1:15</div></td>
+                              <td><div>12/11/20181:20</div></td>
+                              <td><div>Bidding Complete</div></td>
+                              <td><div><a href="#">View</a></div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                              <svg class="icon icon-left"><use xlink:href="#icon-left"></use></svg>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link" href="#">9</a></li>
+                          <li class="page-item"><a class="page-link" href="#">10</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">
+                              <svg class="icon icon-right"><use xlink:href="#icon-right"></use></svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./../components/sprite.html')
+</body>
+
+</html>
