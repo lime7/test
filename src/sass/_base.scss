@@ -124,8 +124,11 @@ html {
 .form-control[readonly] {
   background-color: transparent;
   border-color: transparent;
-  padding-left: 0.75rem;
+  padding-left: .75rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   font-weight: 500;
+  font-size: .875rem;
 }
 
 textarea.form-control:disabled,

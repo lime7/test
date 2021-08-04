@@ -29,8 +29,386 @@
 
                     <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
                       <h1 class="h1 fw-bolder">Tender Details</h1>
+
+                      <form class="form">
+                        <div class="mb-30">
+                          <div class="mb-3">
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="tender-name" class="col-form-label py-0">Name:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="tender-name" class="form-control" readonly value="Bricks and Mortar">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="profile-email" class="col-form-label py-0">Status:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="profile-email" class="form-control" readonly value="Active">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="profile-phone" class="col-form-label py-0">Pricing View:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="profile-phone" class="form-control" readonly value="Open">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="profile-type" class="col-form-label py-0">Visibility:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="profile-type" class="form-control" readonly value="Private">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="profile-expertise" class="col-form-label py-0">Date Posted:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="profile-expertise" class="form-control" readonly value="11/20/2019">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="profile-years-expertise" class="col-form-label py-0"> Deadline:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="profile-years-expertise" class="form-control" readonly value="11/30/2019 5pm">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-0">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-sm-auto">
+                                  <label for="profile-years-expertise" class="col-form-label py-0"> Time Left:</label>
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="profile-years-expertise" class="form-control" readonly value="2 days 11 hours minutes">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row g-2">
+                            <div class="col-lg-auto">
+                              <a href="#" class="btn btn-light px-4">
+                                Edit
+                              </a>
+                            </div>
+
+                            <div class="col-lg-auto">
+                              <a href="#" class="btn btn-primary px-4">
+                                Withdraw
+                              </a>
+                            </div>
+
+                            <div class="col-lg-auto">
+                              <a href="#" class="btn btn-primary px-4">
+                                Invite More
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       
-                      
+
+                        <div class="mb-30">
+                          <div class="d-flex mb-2 align-items-center justify-content-between">
+                            <div class="form-label mb-0">
+                              Bids Comparison
+                            </div>
+
+                            <button class="btn btn-link">
+                              Export to Excel
+                            </button>
+                          </div>
+                          
+                          <div class="table-responsive table-rounded mb-36 shadow bg-white rounded-1">
+                            <table class="table table-striped mb-0">
+                              <thead>
+                                <tr>
+                                  <th class="text-center"><div>Item</div></th>
+                                  <th><div>Quantity</div></th>
+                                  <th>
+                                    <div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Vendor1" checked>
+                                        <label class="form-check-label" for="Vendor1">
+                                          Vendor 1
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Vendor2" checked>
+                                        <label class="form-check-label" for="Vendor2">
+                                          Vendor 2
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Vendor3" checked>
+                                        <label class="form-check-label" for="Vendor3">
+                                          Vendor 3
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="text-center">
+                                    <div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Item1" checked>
+                                        <label class="form-check-label" for="Item1">
+                                          Item 1
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td><div>100</div></td>
+                                  <td><div>33</div></td>
+                                  <td><div>21</div></td>
+                                  <td class="check"><div>14</div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center">
+                                    <div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Item2" checked>
+                                        <label class="form-check-label" for="Item2">
+                                          Item 2
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td><div>500</div></td>
+                                  <td><div>44</div></td>
+                                  <td class="check"><div>12</div></td>
+                                  <td><div>17</div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center">
+                                    <div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Item3" checked>
+                                        <label class="form-check-label" for="Item3">
+                                          Item 3
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td><div>200</div></td>
+                                  <td><div>22</div></td>
+                                  <td><div>16</div></td>
+                                  <td class="check"><div>13</div></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="pb-20 border-bottom">
+                            <div class="row">
+                              <div class="col-lg-4 text-end">
+                                <div class="form-label">
+                                  Total
+                                </div>
+                              </div>
+
+                              <div class="col-lg-auto">
+                                <ul class="list-unstyled mb-0">
+                                  <li>
+                                    <small>33x100</small>
+                                  </li>
+                                  <li>
+                                    <small>44x500</small>
+                                  </li>
+                                  <li>
+                                    <small>22x200</small>
+                                  </li>
+                                  <li>
+                                    <small>= 29700</small>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="col-lg-auto">
+                                <ul class="list-unstyled mb-0">
+                                  <li>
+                                    <small>21x100</small>
+                                  </li>
+                                  <li>
+                                    <small>12x500</small>
+                                  </li>
+                                  <li>
+                                    <small>16x200</small>
+                                  </li>
+                                  <li>
+                                    <small>= 11300</small>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="col-lg-auto">
+                                <ul class="list-unstyled mb-0">
+                                  <li>
+                                    <small>14x100</small>
+                                  </li>
+                                  <li>
+                                    <small>17x500</small>
+                                  </li>
+                                  <li>
+                                    <small>13x200</small>
+                                  </li>
+                                  <li>
+                                    <small>= 12500</small>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="pt-3">
+                            <div class="row">
+                              <div class="col-lg-4 text-end">
+                                <div class="form-label">
+                                  Lowest <br>Possible Total
+                                </div>
+                              </div>
+
+                              <div class="col-lg-auto">
+                                <ul class="list-unstyled mb-0">
+                                  <li>
+                                    <small>14X100 (Vendor 3)</small>
+                                  </li>
+                                  <li>
+                                    <small>12X500 (Vendor 2)</small>
+                                  </li>
+                                  <li>
+                                    <small>13X200 (Vendor 3)</small>
+                                  </li>
+                                  <li>
+                                    <small>= 10000</small>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-2">
+                          <div class="form-label mb-2">
+                            Vendor with lowest prices
+                          </div>
+
+                          <div class="table-responsive table-rounded table-auto mb-30 shadow bg-white rounded-1">
+                            <table class="table table-striped mb-0">
+                              <thead>
+                                <tr>
+                                  <th class="text-center"><div>Vendor</div></th>
+                                  <th><div>Number of Lowest Prices</div></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="text-center"><div>Vendor 1</div></td>
+                                  <td><div>2</div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center"><div>Vendor 2</div></td>
+                                  <td><div>1</div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center"><div>Vendor 3</div></td>
+                                  <td><div>0</div></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="mb-30">
+                          <div class="form-label mb-2">
+                            Finalize Tender
+                          </div>
+
+                          <div class="table-responsive table-rounded mb-30 shadow bg-white rounded-1">
+                            <table class="table table-striped mb-0">
+                              <thead>
+                                <tr>
+                                  <th class="text-center"><div>S No</div></th>
+                                  <th><div>Item Name</div></th>
+                                  <th><div>Description</div></th>
+                                  <th><div>Quantity</div></th>
+                                  <th><div>Unit</div></th>
+                                  <th><div>Price</div></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="text-center"><div>1</div></td>
+                                  <td><div>Item 1</div></td>
+                                  <td><div>Desc 1</div></td>
+                                  <td><div>100</div></td>
+                                  <td><div>bag</div></td>
+                                  <td><div><span class="text-write">Write...</span></div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center"><div>2</div></td>
+                                  <td><div>Item 2</div></td>
+                                  <td><div>Desc 2</div></td>
+                                  <td><div>100</div></td>
+                                  <td><div>bag</div></td>
+                                  <td><div><span class="text-write">Write...</span></div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center"><div>3</div></td>
+                                  <td><div>Item 3</div></td>
+                                  <td><div>Desc 3</div></td>
+                                  <td><div>100</div></td>
+                                  <td><div>bag</div></td>
+                                  <td><div><span class="text-write">Write...</span></div></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="text-end pt-10">
+                          <button type="submit" class="btn btn-primary">
+                            Finalize
+                          </button>
+                        </div>
+
+                      </form>
                     </div>
                   </div>
                 </div>

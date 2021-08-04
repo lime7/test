@@ -433,6 +433,27 @@ body {
   line-height: 1.5rem;
 }
 
+.table-auto {
+  display: inline-block;
+}
+
+.table-auto .table {
+  width: auto;
+}
+
+.table td.check {
+  padding: 0;
+}
+
+.table td.check > div {
+  border: 3px solid #f6ab60;
+  padding-left: .875rem;
+  padding-right: .875rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .calendar .btn {
   display: flex;
   align-items: center;
