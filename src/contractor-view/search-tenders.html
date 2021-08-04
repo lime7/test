@@ -20,12 +20,12 @@
             <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
               <div class="row g-0">
                 <div class="col-lg-2">
-                  @require('./components/menu.html')
+                  @require('./../components/menu-contractor.html')
                 </div>
 
                 <div class="col-lg-10">
                   <div class="position-relative px-2 py-lg-6 px-lg-30">
-                    @require('./components/navbar.html')
+                    @require('./../components/navbar.html')
 
                     <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
                       <h1 class="h1 fw-bolder">Search for Tenders</h1>
@@ -103,12 +103,18 @@
                           <h6 class="fsz-18 mb-1">
                             Search Results
                           </h6>
-                          <p>
-                            <small>
-                              We didn`t find any tenders that match <br> your search
-                            </small>
-                          </p>
-                          <img src="images/img-2.svg" alt="" class="img-fluid">
+                          <div class="d-block">
+                            <p>
+                              <small>
+                                We didn`t find any tenders that match <br> your search
+                              </small>
+                            </p>
+                            <img src="../images/img-2.svg" alt="" class="img-fluid">
+                          </div>
+
+                          <div class="d-none">
+                            ...
+                          </div>
                         </div>
                       </div>                     
                       
@@ -122,7 +128,7 @@
       </div>
     </main>
   </div>
-  @require('./components/sprite.html')
+  @require('./../components/sprite.html')
 </body>
 
 </html>

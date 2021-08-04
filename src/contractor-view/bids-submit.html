@@ -20,47 +20,44 @@
             <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
               <div class="row g-0">
                 <div class="col-lg-2">
-                  @require('./components/menu.html')
+                  @require('./../components/menu-contractor.html')
                 </div>
 
                 <div class="col-lg-10">
                   <div class="position-relative px-2 py-lg-6 px-lg-30">
-                    @require('./components/navbar.html')
+                    @require('./../components/navbar.html')
 
                     <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
                       <h1 class="h1 fw-bolder">Submit Bid</h1>
-                      <!-- <h6 class="fsz-18 mb-20">
-                        List of Active Tenders you have bid on
-                      </h6> -->
                       
                       <form class="form">
                         
                         <ul class="list-unstyled mb-30 lh-lg">
-                          <li class="mb-1">
+                          <li class="mb-3 d-flex">
                             <span class="form-label me-2">Name:</span>
                             <small>Bricks and Mortar</small>
                           </li>
-                          <li class="mb-1">
+                          <li class="mb-3 d-flex">
                             <span class="form-label me-2">Status:</span>
                             <small>Active</small>
                           </li>
-                          <li class="mb-1">
+                          <li class="mb-3 d-flex">
                             <span class="form-label me-2">Pricing View:</span>
                             <small>Open</small>
                           </li>
-                          <li class="mb-1">
+                          <li class="mb-3 d-flex">
                             <span class="form-label me-2">Visibility:</span>
                             <small>Private</small>
                           </li>
-                          <li class="mb-1">
+                          <li class="mb-3 d-flex">
                             <span class="form-label me-2">Date Posted:</span>
                             <small>11/20/2019</small>
                           </li>
-                          <li class="mb-1">
+                          <li class="mb-3 d-flex">
                             <span class="form-label me-2">Deadline:</span>
                             <small>11/30/2019 5pm</small>
                           </li>
-                          <li class="mb-0">
+                          <li class="mb-0 d-flex">
                             <span class="form-label me-2">Time Left:</span>
                             <small>2 days 11 hours minutes </small>
                           </li>
@@ -85,7 +82,7 @@
                                 <td><div>Desc 1</div></td>
                                 <td><div>100</div></td>
                                 <td><div>bag</div></td>
-                                <td><div>100</div></td>
+                                <td class="ps-0"><div><input type="text" class="form-control"></div></td>
                               </tr>
                               <tr>
                                 <td class="text-center"><div>2</div></td>
@@ -93,7 +90,7 @@
                                 <td><div>Desc 2</div></td>
                                 <td><div>100</div></td>
                                 <td><div>bag</div></td>
-                                <td><div>100</div></td>
+                                <td class="ps-0"><div><input type="text" class="form-control"></div></td>
                               </tr>
                               <tr>
                                 <td class="text-center"><div>3</div></td>
@@ -101,7 +98,7 @@
                                 <td><div>Desc 3</div></td>
                                 <td><div>100</div></td>
                                 <td><div>bag</div></td>
-                                <td><div>100</div></td>
+                                <td class="ps-0"><div><input type="text" class="form-control"></div></td>
                               </tr>
                             </tbody>
                           </table>
@@ -123,7 +120,7 @@
       </div>
     </main>
   </div>
-  @require('./components/sprite.html')
+  @require('./../components/sprite.html')
 </body>
 
 </html>

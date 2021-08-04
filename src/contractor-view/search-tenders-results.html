@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  
+</head>
+<body>
+  <div class="project py-4 px-2 p-lg-6">
+    <main class="page-content">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-12">
+            <div class="lg bg-light shadow-lg rounded-3 mx-auto position-relative">
+              <div class="row g-0">
+                <div class="col-lg-2">
+                  @require('./../components/menu-contractor.html')
+                </div>
+
+                <div class="col-lg-10">
+                  <div class="position-relative px-2 py-lg-6 px-lg-30">
+                    @require('./../components/navbar.html')
+
+                    <div class="bg-white shadow rounded-3 pt-3 px-2 pb-36 px-lg-20">
+                      <h1 class="h1 fw-bolder">Search for Tenders</h1>
+                      <h6 class="fsz-18 mb-30">
+                        Filters
+                      </h6>
+
+                      <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+
+                          <div class="row">
+                            <div class="col-lg-8">
+                              <form class="form">
+                                <div class="mb-14">
+                                  <div class="position-relative">
+                                    <select class="form-select" aria-label="Industry">
+                                      <option selected>Industry</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="mb-14">
+                                  <div class="calendar position-relative">
+                                    <input type="text" name="Deadline" class="form-control" placeholder="Deadline">
+
+                                    <button class="btn h-100 border-start rounded-0 position-absolute top-0 end-0">
+                                      <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+                                    </button>
+                                  </div>
+                                </div>
+
+                                <div class="form-label mb-10">
+                                  Type of Tender
+                                </div>
+
+                                <ul class="list-unstyled pb-10">
+                                  <li class="mb-2">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="typeOfTender1">
+                                      <label class="form-check-label" for="typeOfTender1">
+                                        <small class="fw-normal">Open View</small>
+                                      </label>
+                                    </div>
+                                  </li>
+                                  <li class="mb-2">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="typeOfTender2">
+                                      <label class="form-check-label" for="typeOfTender2">
+                                        <small class="fw-normal">Employer View</small>
+                                      </label>
+                                    </div>
+                                  </li>
+                                  <li class="mb-2">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="typeOfTender2">
+                                      <label class="form-check-label" for="typeOfTender2">
+                                        <small class="fw-normal">Closed View</small>
+                                      </label>
+                                    </div>
+                                  </li>
+                                </ul>
+
+                                <button type="submit" class="btn btn-primary px-4">
+                                  Search
+                                </button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <h6 class="fsz-18 mb-1">
+                            Search Results
+                          </h6>
+
+                          <div class="d-none">
+                            <p>
+                              <small>
+                                We didn`t find any tenders that match <br> your search
+                              </small>
+                            </p>
+                            <img src="../images/img-2.svg" alt="" class="img-fluid">
+                          </div>
+
+                          <div class="d-block">
+                            <div class="table-responsive table-x mb-30">
+                              <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td><div><a href="#" data-bs-toggle="modal" data-bs-target="#inboxMessage1">Emp1</a></div></td>
+                                    <td><div><a href="#" data-bs-toggle="modal" data-bs-target="#inboxMessage1">12/11/2018 1:15 pm / am</a></div></td>
+                                    <td><div><a href="#" data-bs-toggle="modal" data-bs-target="#inboxMessage1">View</a></div></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            @require('./../components/modal.html')
+
+                            <nav aria-label="...">
+                              <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <svg class="icon icon-left"><use xlink:href="#icon-left"></use></svg>
+                                  </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                  <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">
+                                    <svg class="icon icon-right"><use xlink:href="#icon-right"></use></svg>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>                     
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @require('./../components/sprite.html')
+</body>
+
+</html>

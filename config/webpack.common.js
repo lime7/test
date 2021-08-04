@@ -149,7 +149,7 @@ module.exports = {
       title: 'Sign UP',
       // favicon: paths.static + '/favicon.ico',
       filename: 'signup.html',
-      template: paths.src + '/signup.html', // template file
+      template: paths.src + '/authorization/signup.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -159,7 +159,7 @@ module.exports = {
       title: 'Create Account',
       // favicon: paths.static + '/favicon.ico',
       filename: 'create-account.html',
-      template: paths.src + '/create-account.html', // template file
+      template: paths.src + '/authorization/create-account.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -169,7 +169,7 @@ module.exports = {
       title: 'Registaration contractor Company',
       // favicon: paths.static + '/favicon.ico',
       filename: 'registration-contractror-company.html',
-      template: paths.src + '/registration-contractror-company.html', // template file
+      template: paths.src + '/authorization/registration-contractror-company.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -179,7 +179,7 @@ module.exports = {
       title: 'Registaration contractor Individual',
       // favicon: paths.static + '/favicon.ico',
       filename: 'registration-contractror-individual.html',
-      template: paths.src + '/registration-contractror-individual.html', // template file
+      template: paths.src + '/authorization/registration-contractror-individual.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -189,7 +189,7 @@ module.exports = {
       title: 'Registaration Employer',
       // favicon: paths.static + '/favicon.ico',
       filename: 'registration-employer.html',
-      template: paths.src + '/registration-employer.html', // template file
+      template: paths.src + '/authorization/registration-employer.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -199,7 +199,7 @@ module.exports = {
       title: 'Registaration Complete',
       // favicon: paths.static + '/favicon.ico',
       filename: 'registration-complete.html',
-      template: paths.src + '/registration-complete.html', // template file
+      template: paths.src + '/authorization/registration-complete.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -209,7 +209,7 @@ module.exports = {
       title: 'Reset Password',
       // favicon: paths.static + '/favicon.ico',
       filename: 'reset-password.html',
-      template: paths.src + '/reset-password.html', // template file
+      template: paths.src + '/authorization/reset-password.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -219,7 +219,7 @@ module.exports = {
       title: 'Profile',
       // favicon: paths.static + '/favicon.ico',
       filename: 'profile.html',
-      template: paths.src + '/profile.html', // template file
+      template: paths.src + '/contractor-view/profile.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -229,7 +229,7 @@ module.exports = {
       title: 'Bids',
       // favicon: paths.static + '/favicon.ico',
       filename: 'bids.html',
-      template: paths.src + '/bids.html', // template file
+      template: paths.src + '/contractor-view/bids.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -239,7 +239,7 @@ module.exports = {
       title: 'Submit Bids',
       // favicon: paths.static + '/favicon.ico',
       filename: 'bids-submit.html',
-      template: paths.src + '/bids-submit.html', // template file
+      template: paths.src + '/contractor-view/bids-submit.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -249,7 +249,7 @@ module.exports = {
       title: 'View Bids',
       // favicon: paths.static + '/favicon.ico',
       filename: 'bids-view.html',
-      template: paths.src + '/bids-view.html', // template file
+      template: paths.src + '/contractor-view/bids-view.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -259,7 +259,17 @@ module.exports = {
       title: 'Search for Tenders',
       // favicon: paths.static + '/favicon.ico',
       filename: 'search-tenders.html',
-      template: paths.src + '/search-tenders.html', // template file
+      template: paths.src + '/contractor-view/search-tenders.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Search for Tenders Results',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'search-tenders-results.html',
+      template: paths.src + '/contractor-view/search-tenders-results.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -269,7 +279,7 @@ module.exports = {
       title: 'Inbox messages',
       // favicon: paths.static + '/favicon.ico',
       filename: 'inbox-messages.html',
-      template: paths.src + '/inbox-messages.html', // template file
+      template: paths.src + '/contractor-view/inbox-messages.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -279,7 +289,7 @@ module.exports = {
       title: 'Notifications',
       // favicon: paths.static + '/favicon.ico',
       filename: 'notifications.html',
-      template: paths.src + '/notifications.html', // template file
+      template: paths.src + '/contractor-view/notifications.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -289,7 +299,7 @@ module.exports = {
       title: 'Notifications Select',
       // favicon: paths.static + '/favicon.ico',
       filename: 'notifications-settings.html',
-      template: paths.src + '/notifications-settings.html', // template file
+      template: paths.src + '/contractor-view/notifications-settings.html', // template file
       minify: false
       // hash: true,
       // inject: false
@@ -299,7 +309,17 @@ module.exports = {
       title: 'Password',
       // favicon: paths.static + '/favicon.ico',
       filename: 'password.html',
-      template: paths.src + '/password.html', // template file
+      template: paths.src + '/contractor-view/password.html', // template file
+      minify: false
+      // hash: true,
+      // inject: false
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Email',
+      // favicon: paths.static + '/favicon.ico',
+      filename: 'email.html',
+      template: paths.src + '/contractor-view/email.html', // template file
       minify: false
       // hash: true,
       // inject: false
