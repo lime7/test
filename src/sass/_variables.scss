@@ -78,6 +78,7 @@ $input-padding-x:                   1.1875rem !default;
 $input-padding-y:                   .9375rem !default;
 $input-bg:                          transparent !default;
 $input-border-color:                $gray-300 !default;
+$input-border-radius:               .5rem !default;
 $input-placeholder-color:           $gray-300 !default;
 $input-focus-box-shadow:            none !default;
 $input-focus-border-color:          $gray-300 !default;
@@ -102,6 +103,7 @@ $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://w
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9'><circle cx='4.5' cy='4.5' r='4.5' fill='#{$blue}'/></svg>") !default;
 $form-select-focus-box-shadow:      none !default;
 $form-select-box-shadow:            none !default;
+$form-select-border-radius:         .5rem !default;
 
 $btn-font-size:                     1rem !default;
 $btn-line-height:                   1.5rem !default;

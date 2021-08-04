@@ -277,3 +277,7 @@ small {
   font-size: $small-font-size;
   line-height: $small-line-height;
 }
+
+.mh-auto {
+  min-height: auto !important;
+}
