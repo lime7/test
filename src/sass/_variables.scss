@@ -165,7 +165,7 @@ $dropdown-item-padding-y:           $spacer * .25 !default;
 $dropdown-item-padding-x:           $spacer * .75 !default;
 
 $card-border-color:                 rgba($gray-300, .5) !default;
-$card-spacer-y:                     $spacer * .5 !default;
+$card-spacer-y:                     $spacer * .7 !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               0 !default;
 $card-border-radius:                .5rem !default;
@@ -176,6 +176,7 @@ $modal-content-box-shadow-sm-up:    $box-shadow-lg !default;
 $modal-content-border-width:        0 !default;
 $modal-header-padding-y:            .875rem !default;
 $modal-inner-padding:               $spacer * 1.875 !default;
+$modal-md:                          544px !default;
 
 $progress-height:                   .5rem !default;
 $progress-bg:                       #e7edf5 !default;
