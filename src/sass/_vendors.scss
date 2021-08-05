@@ -399,7 +399,7 @@ span.flatpickr-weekday {
   display: flex;
   -webkit-box-align: start;
   align-items: flex-start;
-  width: 307.875px;
+  width: 300.3px;
 }
 
 .flatpickr-days:focus {
@@ -410,9 +410,9 @@ span.flatpickr-weekday {
   padding: 0;
   outline: 0;
   text-align: left;
-  width: 307.875px;
-  min-width: 307.875px;
-  max-width: 307.875px;
+  width: 300.33px;
+  min-width: 300.33px;
+  max-width: 300.33px;
   box-sizing: border-box;
   display: inline-block;
   display: flex;
@@ -735,5 +735,23 @@ span.flatpickr-weekday {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .flatpickr-calendar {
+    width: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .dayContainer {
+    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
+  }
+
+  .flatpickr-days {
+    width: 290px;
   }
 }
