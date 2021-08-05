@@ -13,6 +13,8 @@ import Button from 'bootstrap/js/dist/button'
 import Offcanvas from 'bootstrap/js/dist/offcanvas'
 // eslint-disable-next-line import/first
 import flatpickr from 'flatpickr'
+// eslint-disable-next-line import/first
+import confirmDatePlugin from 'flatpickr/dist/plugins/confirmDate/confirmDate'
 
 flatpickr('.flatpickr', {
   mode: 'range',
@@ -31,7 +33,12 @@ flatpickr('.flatpickr', {
   },
   onClose: function (dateObj, dateStr) {
     this.element.closest('.calendar').classList.remove('on')
-  }
+  },
+  // eslint-disable-next-line new-cap
+  plugins: [new confirmDatePlugin({
+    confirmText: 'Done',
+    showAlways: true
+  })]
 })
 
 // Custom Select

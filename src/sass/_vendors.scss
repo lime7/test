@@ -755,3 +755,18 @@ span.flatpickr-weekday {
     width: 290px;
   }
 }
+
+.flatpickr-confirm {
+  background: #1479ff;
+  border-radius: .5rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1rem;
+  padding: .75rem 2rem;
+  cursor: pointer;
+}
+
+.flatpickr-confirm svg {
+  display: none;
+}
