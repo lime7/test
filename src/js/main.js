@@ -86,3 +86,16 @@ function closeAllSelect (elmnt) {
   }
 }
 document.addEventListener('click', closeAllSelect)
+
+// File Name
+var files, lfiles, file, wrap, label
+files = document.querySelectorAll('.file input[type="file"]')
+lfiles = files.length
+for (j = 0; j < lfiles; j++) {
+  file = files[j]
+  wrap = file.closest('.file')
+  label = wrap.querySelector('.form-label')
+  file.onchange = function () {
+    label.innerHTML = this.files[0].name
+  }
+}

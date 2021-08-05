@@ -63,7 +63,7 @@
                                   <label for="tender-pricing" class="fs-6 lh-base col-form-label py-0">Pricing Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7 ms-xl-n5">
-                                  <div class="position-relative">
+                                  <div class="custom-select position-relative">
                                     <select class="form-select" id="tender-pricing" aria-label="Business Type">
                                       <option value="1" selected>Option 1</option>
                                       <option value="2">Two</option>
@@ -81,7 +81,7 @@
                                   <label for="tender-visibility" class="fs-6 lh-base col-form-label py-0">Tender Visibility: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7 ms-xl-n5">
-                                  <div class="position-relative">
+                                  <div class="custom-select position-relative">
                                     <select class="form-select" id="tender-visibility" aria-label="Business Type">
                                       <option value="1" selected>Option 1</option>
                                       <option value="2">Two</option>
@@ -120,7 +120,7 @@
                                   <label for="tender-industry" class="fs-6 lh-base col-form-label py-0">Industry: <span class="text-warning"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg></span></label> 
                                 </div>
                                 <div class="col-sm-8 col-lg-7 ms-xl-n5">
-                                  <div class="position-relative">
+                                  <div class="custom-select position-relative">
                                     <select class="form-select" id="tender-industry" aria-label="Business Type">
                                       <option value="1" selected>Option 1</option>
                                       <option value="2">Two</option>
@@ -233,9 +233,15 @@
                             </div>
                           </div>
                           <div class="col-lg-12">
-                            <a href="#" class="btn btn-light px-36 px-lg-5">
-                              + Add More
-                            </a>
+                            <div class="file d-flex align-items-center justify-content-between">
+                              <label class="btn btn-light px-36 px-lg-5">
+                                <span>+ Add More</span>
+                                <input type="file" >
+                              </label>
+                              <span class="form-label">
+                                <!-- No file chosen -->
+                              </span>
+                            </div>
                           </div>
                         </div>
 

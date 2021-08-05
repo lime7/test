@@ -217,6 +217,15 @@ body {
   font-weight: 500;
   margin-left: 1.375rem;
   display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.file input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -233,6 +242,8 @@ body {
 .file .btn { /* stylelint-disable-line no-descending-specificity */
   color: #fff;
   background: #cfdae8;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .file .btn:hover {
@@ -608,5 +619,24 @@ body {
 
 .select-mask-active {
   opacity: 1;
-  z-index: 1;
+  z-index: 4;
+}
+
+.dropdown-toggle::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.dropdown-toggle.show::before {
+  opacity: 1;
+  z-index: 4;
 }
