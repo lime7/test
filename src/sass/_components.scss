@@ -480,6 +480,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 .calendar .btn .icon {
@@ -622,6 +623,7 @@ body {
   z-index: 4;
 }
 
+.calendar::before,
 .dropdown-toggle::before {
   content: '';
   position: fixed;
@@ -636,7 +638,17 @@ body {
   transition: all .2s ease-in-out;
 }
 
+.calendar.on::before,
 .dropdown-toggle.show::before {
   opacity: 1;
   z-index: 4;
+}
+
+.flatpickr.form-control:disabled,
+.flatpickr.form-control[readonly] {
+  padding: .9375rem 1.1875rem;
+  border: 1px solid #bac8db;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1.375;
 }

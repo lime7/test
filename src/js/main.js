@@ -11,6 +11,28 @@ import Modal from 'bootstrap/js/dist/modal'
 import Button from 'bootstrap/js/dist/button'
 // eslint-disable-next-line import/first
 import Offcanvas from 'bootstrap/js/dist/offcanvas'
+// eslint-disable-next-line import/first
+import flatpickr from 'flatpickr'
+
+flatpickr('.flatpickr', {
+  mode: 'range',
+  dateFormat: 'Y-m-d',
+  monthSelectorType: 'static',
+  yearSelectorType: 'static',
+  locale: {
+    weekdays: {
+      shorthand: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+    }
+  },
+  nextArrow: '<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11.814L5.2 6.657L1 1.5" stroke="#213A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  prevArrow: '<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.2 11.814L1 6.657L5.2 1.5" stroke="#213A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  onOpen: function (dateObj, dateStr) {
+    this.element.closest('.calendar').classList.add('on')
+  },
+  onClose: function (dateObj, dateStr) {
+    this.element.closest('.calendar').classList.remove('on')
+  }
+})
 
 // Custom Select
 var x, i, j, l, ll, selElmnt, a, b, c, m, o
@@ -77,6 +99,7 @@ function closeAllSelect (elmnt) {
       arrNo.push(i)
     } else {
       y[i].classList.remove('select-arrow-active')
+      m.classList.remove('select-mask-active')
     }
   }
   for (i = 0; i < xl; i++) {
