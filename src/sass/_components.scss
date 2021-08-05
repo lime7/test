@@ -527,3 +527,86 @@ body {
     display: none;
   }
 }
+
+.custom-select {
+  position: relative;
+  text-align: left;
+}
+
+.select-placeholder {
+  color: #bac8db;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected::after {
+  content: '';
+  position: absolute;
+  right: 1.1875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+  background-size: 16px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select-selected.select-arrow-active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #fff;
+  box-shadow: 0 1.25rem 3.75rem #b6c3d3;
+  border-radius: .5rem;
+  font-size: .875rem;
+  line-height: 1.3125rem;
+  overflow: hidden;
+}
+
+.select-items > div {
+  padding: .625rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items div + div {
+  border-top: 1px solid #bac8db;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #1479ff;
+  color: #fff;
+}
+
+.select-mask {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.select-mask-active {
+  opacity: 1;
+  z-index: 1;
+}
