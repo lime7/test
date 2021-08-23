@@ -14,7 +14,7 @@ body {
 }
 
 .lg {
-  max-width: 1180px;
+  max-width: 1366px;
   width: 100%;
   min-height: calc(100vh - 240px);
   overflow: hidden;
@@ -22,6 +22,16 @@ body {
 
 .lg > .row {
   min-height: inherit;
+}
+
+.lg .btn-group-vertical {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .lg #offcanvasMenu {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -67,7 +77,7 @@ body {
 }
 
 .logo-xs {
-  max-width: 158px;
+  max-width: 215.45px;
   width: 100%;
 }
 
@@ -107,7 +117,7 @@ body {
   line-height: 1.375rem;
   font-weight: 500;
   // padding: .875rem 1.25rem .875rem 1.875rem;
-  padding: .625rem 1.25rem .875rem 1.5rem;
+  padding: .75rem 1.25rem .75rem 1.5rem;
   border-radius: 0 !important;
   display: flex;
   width: 100%;
@@ -126,7 +136,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  margin-top: -0.375rem;
+  margin-top: -.5rem;
 }
 
 .btn-group-vertical .btn[data-bs-toggle="collapse"]:hover::after,
@@ -145,6 +155,7 @@ body {
   width: 100%;
 }
 
+.panel .badge,
 .btn-group-vertical .btn .badge,
 .btn-group .btn .badge {
   width: 1.4375rem;
@@ -288,6 +299,10 @@ body {
   font-size: 1.125rem;
   // line-height: 1.6875rem;
   line-height: 1.8125rem;
+}
+
+.panel {
+  height: 3.75rem;
 }
 
 .panel .icon { /* stylelint-disable-line no-descending-specificity */

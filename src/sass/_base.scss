@@ -161,9 +161,10 @@ textarea.form-control[readonly] {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  // top: 50%;
+  // transform: translateY(-50%);
   right: -2rem;
+  top: .9375rem;
 
   @include media-breakpoint-down(lg) {
     right: 0;
@@ -176,6 +177,11 @@ textarea.form-control[readonly] {
 
 .is-invalid::after {
   background-image: $form-feedback-icon-invalid;
+}
+
+.invalid-feedback {
+  text-align: left;
+  display: block;
 }
 
 .btn-group-vertical > .btn,

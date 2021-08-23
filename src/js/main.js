@@ -2,6 +2,8 @@
 
 console.log('S>>>')
 // eslint-disable-next-line import/first
+// import bootstrap from 'bootstrap'
+// eslint-disable-next-line import/first
 import Collapse from 'bootstrap/js/dist/collapse'
 // eslint-disable-next-line import/first
 import Dropdown from 'bootstrap/js/dist/dropdown'
@@ -12,9 +14,17 @@ import Button from 'bootstrap/js/dist/button'
 // eslint-disable-next-line import/first
 import Offcanvas from 'bootstrap/js/dist/offcanvas'
 // eslint-disable-next-line import/first
+import Tooltip from 'bootstrap/js/dist/tooltip'
+// eslint-disable-next-line import/first
 import flatpickr from 'flatpickr'
 // eslint-disable-next-line import/first
 import confirmDatePlugin from 'flatpickr/dist/plugins/confirmDate/confirmDate'
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  // eslint-disable-next-line no-undef
+  return new Tooltip(tooltipTriggerEl)
+})
 
 flatpickr('.flatpickr', {
   mode: 'range',
@@ -129,3 +139,7 @@ for (j = 0; j < lfiles; j++) {
     label.innerHTML = this.files[0].name
   }
 }
+
+// eslint-disable-next-line import/first
+import $ from 'jquery'
+window.$ = window.jQuery = $
