@@ -361,6 +361,12 @@ select#id_type {
     letter-spacing: -0.02em;
 }
 
+.display-3 {
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
 .fw-600 {
     font-weight: 600;
 }
@@ -395,6 +401,10 @@ select#id_type {
 
 .page-nav {
     height: 6.25rem;
+}
+
+.page-footer {
+    
 }
 
 @media (min-width: 992px) {
